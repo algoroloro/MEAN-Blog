@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "author": "algoroloro",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
