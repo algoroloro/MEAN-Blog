@@ -3,13 +3,6 @@
   flex-direction: row;
 }
 
-.row-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .column {
   display: flex;
   flex-direction: column;
@@ -20,4 +13,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.vcenter {
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
 }

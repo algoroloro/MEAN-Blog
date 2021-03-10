@@ -3,3 +3,9 @@
 @import "functions/index.scss";
 @import "utilities/index.scss";
 @import "objects/index.scss";
+
+body {
+  background-color: $background;
+  margin: 0;
+  padding: 0;
+}

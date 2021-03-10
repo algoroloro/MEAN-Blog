@@ -15,8 +15,10 @@ textarea {
 
 button {
   background-color: transparent;
+  border: none;
   padding: 5px 8px;
   cursor: pointer;
+  outline: none;
 }
 
 input:-webkit-autofill,
