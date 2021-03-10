@@ -19,6 +19,7 @@ app.use(express.json());
 app.use(cors);
 
 RouterConfig(app, '/article', Routes.ArticleRoutes);
+RouterConfig(app, '/user', Routes.UserRoutes);
 
 app.listen(PORT, () => {
     console.log('---> SERVER RUNNING ON PORT ' + PORT);
