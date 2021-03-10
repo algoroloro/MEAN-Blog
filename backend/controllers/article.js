@@ -44,6 +44,30 @@ const ArticleController = {
             return res.status(400).send(error);
         }
     },
+    readPerTime: async (req, res) => {
+        try {
+            const articles = await Article.find({ }).sort('-time');
+            res.status(200).send(articles);
+        } catch (error) {
+            return res.status(400).send(error);
+        }
+    },
+    readPerRate: async (req, res) => {
+        try {
+            const articles = await Article.find({ }).sort('-rate');
+            res.status(200).send(articles);
+        } catch (error) {
+            return res.status(400).send(error);
+        }
+    },
+    readPerUser: async (req, res) => {
+        try {
+            const articles = await Article.find({userId: req.params.id});
+            res.status(200).send(articles);
+        } catch (error) {
+            return res.status(400).send(error);
+        }
+    },
     search: async (req, res) => {
         try {
             const articles = await Article.find({
