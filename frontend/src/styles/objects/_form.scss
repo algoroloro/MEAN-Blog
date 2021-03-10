@@ -1,0 +1,26 @@
+.form-group {
+  align-items: flex-end;
+}
+
+.textbox-control {
+  margin-left: 10px;
+  padding: 3px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $main-color;
+  transition: 0.5s box-shadow;
+
+  &:hover {
+    box-shadow: 0 2px $main-color;
+  }
+
+  &.w100 {
+    width: 315px;
+    min-width: 100px;
+  }
+
+  &.w200 {
+    width: 700px;
+    min-width: 210px;
+  }
+}

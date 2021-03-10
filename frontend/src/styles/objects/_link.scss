@@ -1,0 +1,13 @@
+.enlace {
+  padding: 5px 10px;
+  transition: 0.5s transform;
+
+  &:hover {
+    background-color: $main-color;
+    transform: translateY(-10px);
+
+    & p {
+      color: $white-color;
+    }
+  }
+}
